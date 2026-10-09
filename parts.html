@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>配件推荐与选择 · 小白装机指南</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <span class="brand"><a href="index.html">🖥 装机指南</a></span>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="parts.html" class="active">配件推荐</a>
+      <a href="ports.html">接口介绍</a>
+      <a href="steps.html">装机步骤</a>
+    </nav>
+  </div>
+</header>
+
+<div class="subnav">
+  <span style="font-size:13px;color:var(--muted);line-height:28px;">快速跳转：</span>
+  <a href="#cpu">CPU</a>
+  <a href="#mb">主板</a>
+  <a href="#gpu">显卡</a>
+  <a href="#ram">内存</a>
+  <a href="#ssd">硬盘</a>
+  <a href="#psu">电源</a>
+  <a href="#cooler">散热</a>
+  <a href="#case">机箱</a>
+</div>
+
+<section id="parts" class="anchor">
+  <div class="container">
+    <h2>🧩 配件推荐与选择</h2>
+    <p class="sub">先看每个配件是干什么的，再看选购要点和当前主流型号的参考参数与价格。</p>
+
+    <div class="tips">
+      ⚠️ <b>价格提醒：</b>以下均为 2026 年大致的<b>参考价</b>，不含购买链接。
+      显卡、内存等配件 2026 年价格波动较大（显卡普遍上涨），下单前请以购买当日的实际报价为准。
+    </div>
+
+    <!-- CPU -->
+    <div id="cpu" class="anchor card" style="margin-bottom:18px;">
+      <h3>1. CPU（中央处理器）—— 电脑的大脑</h3>
+      <p class="role">负责所有计算和逻辑处理，决定整机性能上限。</p>
+      <div class="tips"><b>选购要点：</b>日常办公/轻度游戏选 6 核即可；主流游戏选 6~8 核；
+        专业渲染/直播多开选 8 核以上。纯游戏优先看 <b>X3D 结尾</b>的 AMD 型号（游戏帧数最强）；
+        Intel 后缀带 <b>KF</b> 的没有核显、价格更便宜（但必须配独显）。</div>
+    </div>
+    <div class="table-title">CPU 参考型号（2025-2026 当前主流）</div>
+    <table>
+      <thead>
+        <tr><th>定位</th><th>型号</th><th>核心/线程</th><th>参考价</th><th>适合</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="tier entry">入门</span></td><td class="model">AMD 锐龙 5 9600X</td><td>6核12线程</td><td class="price">¥1300 左右</td><td>主流游戏、家用</td></tr>
+        <tr><td><span class="tier mid">中端</span></td><td class="model">AMD 锐龙 7 9700X</td><td>8核16线程</td><td class="price">¥1900 左右</td><td>高性价比游戏</td></tr>
+        <tr><td><span class="tier mid">中端</span></td><td class="model">Intel 酷睿 Ultra 5 245K</td><td>14核14线程</td><td class="price">¥2200 左右</td><td>Intel 新平台主流</td></tr>
+        <tr><td><span class="tier high">高端</span></td><td class="model">AMD 锐龙 7 9800X3D</td><td>8核16线程</td><td class="price">¥3300 左右</td><td>纯游戏旗舰（游戏最强）</td></tr>
+        <tr><td><span class="tier high">高端</span></td><td class="model">AMD 锐龙 9 9950X3D</td><td>16核32线程</td><td class="price">¥4800 左右</td><td>游戏+生产力全能</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 主板 -->
+    <div id="mb" class="anchor card" style="margin-bottom:18px;">
+      <h3>2. 主板（Motherboard）—— 所有配件的"底座"</h3>
+      <p class="role">CPU、内存、显卡、硬盘都插在它上面，负责它们之间的连接和供电。</p>
+      <div class="tips"><b>选购要点：</b>先确定 CPU，再选对应插槽和芯片组的主板。
+        AMD 锐龙 9000 用 <b>AM5</b> 插槽，主流芯片组 <b>B850</b>、高端 <b>X870</b>；
+        Intel 酷睿 Ultra 用 <b>LGA1851</b> 插槽，主流 <b>B860</b>、高端 <b>Z890</b>。
+        认准"CPU 插槽类型"要和 CPU 匹配。</div>
+    </div>
+    <div class="table-title">主板参考型号（均为常见的 M-ATX 小板）</div>
+    <table>
+      <thead>
+        <tr><th>平台</th><th>芯片组</th><th>参考价</th><th>特点</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="model">Intel</td><td>B860M</td><td class="price">¥900~1300</td><td>Ultra 平台主流之选</td></tr>
+        <tr><td class="model">Intel</td><td>Z890</td><td class="price">¥1800 起</td><td>支持超频，供电更强</td></tr>
+        <tr><td class="model">AMD</td><td>B850M</td><td class="price">¥900~1300</td><td>锐龙 9000 主流之选</td></tr>
+        <tr><td class="model">AMD</td><td>X870</td><td class="price">¥1500 起</td><td>接口更全、供电更强</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 显卡 -->
+    <div id="gpu" class="anchor card" style="margin-bottom:18px;">
+      <h3>3. 显卡（GPU）—— 决定游戏和图形性能</h3>
+      <p class="role">负责画面渲染。游戏、视频剪辑、3D 建模全靠它；纯办公可以省掉独显。</p>
+      <div class="tips"><b>选购要点：</b>按"显示器和游戏需求"选。1080P 中高画质 <b>RTX 5060 / RX 9060</b> 级别；
+        2K 高画质 <b>RX 9070 / RTX 5070</b> 级别；4K 才需要 5080 以上。显存至少 8GB 起步，
+        玩 2K/4K 或 AI 绘图建议 <b>16GB 显存</b>。注意 2026 年显卡整体涨价，预算要多留一点。</div>
+    </div>
+    <div class="table-title">显卡参考型号（RTX 50 / RX 9000 系列）</div>
+    <table>
+      <thead>
+        <tr><th>定位</th><th>型号</th><th>显存</th><th>参考价</th><th>适合</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="tier entry">入门</span></td><td class="model">RTX 5060</td><td>8GB</td><td class="price">¥2600 左右</td><td>1080P 主流游戏</td></tr>
+        <tr><td><span class="tier entry">入门</span></td><td class="model">RX 9060 XT</td><td>16GB</td><td class="price">¥2600 左右</td><td>1080P 高画质（大显存）</td></tr>
+        <tr><td><span class="tier mid">中端</span></td><td class="model">RTX 5060 Ti</td><td>16GB</td><td class="price">¥3600 左右</td><td>1080P 满特效</td></tr>
+        <tr><td><span class="tier mid">中端</span></td><td class="model">RX 9070</td><td>16GB</td><td class="price">¥4500 左右</td><td>2K 高性价比</td></tr>
+        <tr><td><span class="tier mid">中端</span></td><td class="model">RTX 5070</td><td>12GB</td><td class="price">¥4700 左右</td><td>2K 高画质游戏</td></tr>
+        <tr><td><span class="tier mid">中端</span></td><td class="model">RX 9070 XT</td><td>16GB</td><td class="price">¥5000 左右</td><td>2K 满特效/入门 4K</td></tr>
+        <tr><td><span class="tier high">高端</span></td><td class="model">RTX 5070 Ti</td><td>16GB</td><td class="price">¥6300 左右</td><td>2K 满特效 / 4K</td></tr>
+        <tr><td><span class="tier high">高端</span></td><td class="model">RTX 5080</td><td>16GB</td><td class="price">¥8300 左右</td><td>4K 游戏/专业渲染</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 内存 -->
+    <div id="ram" class="anchor card" style="margin-bottom:18px;">
+      <h3>4. 内存（RAM）—— 电脑的"临时工作台"</h3>
+      <p class="role">程序运行时临时存放数据，容量越大能同时开的程序越多。</p>
+      <div class="tips"><b>选购要点：</b>新装机<b>必选 DDR5</b>（DDR4 只用于老平台升级）。
+        日常 <b>16GB</b> 够用，游戏/剪辑建议 <b>32GB</b>。组双通道（插两根）性能更好，
+        DDR5 频率选 <b>6000~6400MHz</b> 即可，再高收益不大。</div>
+    </div>
+    <div class="table-title">内存参考型号</div>
+    <table>
+      <thead>
+        <tr><th>规格</th><th>容量</th><th>频率</th><th>参考价</th><th>适合</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="model">DDR5</td><td>16GB（8×2）</td><td>6000MHz</td><td class="price">¥400 左右</td><td>新平台入门</td></tr>
+        <tr><td class="model">DDR5</td><td>32GB（16×2）</td><td>6000MHz</td><td class="price">¥600 左右</td><td>游戏/剪辑</td></tr>
+        <tr><td class="model">DDR5</td><td>32GB（16×2）</td><td>6400MHz</td><td class="price">¥700 左右</td><td>高性能平台</td></tr>
+        <tr><td class="model">DDR4</td><td>16GB（8×2）</td><td>3200MHz</td><td class="price">¥250 左右</td><td>老平台升级</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 硬盘 -->
+    <div id="ssd" class="anchor card" style="margin-bottom:18px;">
+      <h3>5. 硬盘（存储）—— 放系统和文件的"仓库"</h3>
+      <p class="role">存系统、游戏、资料。分机械硬盘（HDD，慢但便宜）和固态硬盘（SSD，快）。</p>
+      <div class="tips"><b>选购要点：</b>现在装机 <b>必选 M.2 NVMe 固态</b>（读速可达 5000MB/s 以上），
+        系统装里面开机秒开。容量 <b>1TB 起步</b>，预算够直接 2TB。大文件资料可用机械盘做仓库盘。</div>
+    </div>
+    <div class="table-title">硬盘参考型号（NVMe 固态）</div>
+    <table>
+      <thead>
+        <tr><th>定位</th><th>型号</th><th>容量</th><th>参考价</th><th>特点</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="tier entry">入门</span></td><td class="model">致态 TiPlus7100</td><td>1TB</td><td class="price">¥500 左右</td><td>国产，性价比高</td></tr>
+        <tr><td><span class="tier mid">中端</span></td><td class="model">西部数据 SN850X</td><td>1TB</td><td class="price">¥600 左右</td><td>游戏装机常用</td></tr>
+        <tr><td><span class="tier high">高端</span></td><td class="model">三星 990 Pro</td><td>1TB</td><td class="price">¥700 左右</td><td>旗舰性能</td></tr>
+        <tr><td><span class="tier entry">仓库盘</span></td><td class="model">希捷/西数 机械盘</td><td>2TB</td><td class="price">¥400 左右</td><td>存资料、不装系统</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 电源 -->
+    <div id="psu" class="anchor card" style="margin-bottom:18px;">
+      <h3>6. 电源（PSU）—— 全机的"心脏供血"</h3>
+      <p class="role">给所有配件供电。电源不稳会导致死机、重启，甚至烧硬件，最不能省。</p>
+      <div class="tips"><b>选购要点：</b>功率 = 整机满载功耗 × 1.5 左右留余量。
+        中端配置 <b>650W~750W</b>，高端游戏机 <b>850W</b>。认准 <b>80 Plus 金牌</b>认证及以上，
+        选一线品牌（海韵、振华、酷冷至尊、长城等）。</div>
+    </div>
+    <div class="table-title">电源参考规格</div>
+    <table>
+      <thead>
+        <tr><th>功率</th><th>认证</th><th>参考价</th><th>适合</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="model">650W</td><td>80 Plus 金牌</td><td class="price">¥400 左右</td><td>中端游戏机</td></tr>
+        <tr><td class="model">750W</td><td>80 Plus 金牌</td><td class="price">¥500 左右</td><td>中高端游戏机</td></tr>
+        <tr><td class="model">850W</td><td>80 Plus 金牌</td><td class="price">¥700 左右</td><td>旗舰显卡平台</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 散热 -->
+    <div id="cooler" class="anchor card" style="margin-bottom:18px;">
+      <h3>7. 散热器 —— 给 CPU 降温</h3>
+      <p class="role">CPU 满载会发热，散热不好会降频甚至关机。分风冷（塔式）和水冷（一体式）。</p>
+      <div class="tips"><b>选购要点：</b>中端 CPU 用 <b>百元级风冷</b>足够；高端 CPU 或追求颜值选
+        <b>240/360 一体式水冷</b>。记得安装时要<b>涂硅脂</b>并撕掉散热器底部的保护膜。</div>
+    </div>
+    <div class="table-title">散热器参考型号</div>
+    <table>
+      <thead>
+        <tr><th>类型</th><th>参考价</th><th>适合</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="model">百元级风冷（利民/九州风神）</td><td class="price">¥100~200</td><td>R5/Ultra 5 及以下</td></tr>
+        <tr><td class="model">240 一体式水冷</td><td class="price">¥300~400</td><td>中高端 CPU</td></tr>
+        <tr><td class="model">360 一体式水冷</td><td class="price">¥400~600</td><td>旗舰 CPU</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 机箱 -->
+    <div id="case" class="anchor card" style="margin-bottom:18px;">
+      <h3>8. 机箱（Case）—— 装下所有配件的"房子"</h3>
+      <p class="role">固定和保护内部配件，也决定散热风道和颜值。</p>
+      <div class="tips"><b>选购要点：</b>看尺寸和主板是否匹配：<b>ATX 机箱</b>（大）、
+        <b>M-ATX 机箱</b>（主流，够用）、<b>ITX 机箱</b>（迷你，散热和安装难度更高）。
+        新手建议选带侧透、风道设计好的 M-ATX 机箱，方便理线和散热。</div>
+    </div>
+    <div class="table-title">机箱参考规格</div>
+    <table>
+      <thead>
+        <tr><th>尺寸</th><th>参考价</th><th>适合</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="model">M-ATX 机箱（先马/爱国者/乔思伯）</td><td class="price">¥200~400</td><td>新手首选，装得下主流配置</td></tr>
+        <tr><td class="model">ATX 中塔机箱</td><td class="price">¥300~600</td><td>大主板、多硬盘、水冷</td></tr>
+        <tr><td class="model">ITX 迷你机箱</td><td class="price">¥400 起</td><td>桌面小钢炮，有安装门槛</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <a href="ports.html" style="color:var(--accent);text-decoration:none;">下一步：了解电脑各种接口 →</a><br><br>
+  小白装机指南 · 价格随市场波动，仅供学习参考 · 无任何购买链接
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>简单装机步骤 · 小白装机指南</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <span class="brand"><a href="index.html">🖥 装机指南</a></span>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="parts.html">配件推荐</a>
+      <a href="ports.html">接口介绍</a>
+      <a href="steps.html" class="active">装机步骤</a>
+    </nav>
+  </div>
+</header>
+
+<section id="steps" class="anchor">
+  <div class="container">
+    <h2>🛠 简单装机步骤</h2>
+    <p class="sub">按下面顺序来，一步步装完就能点亮。全程不画图，注意文字里标出的关键点即可。</p>
+
+    <div class="tips"><b>开工前准备：</b>一把十字螺丝刀、一个平坦干净的桌面、一个 U 盘（8GB 以上，装系统用）。
+      装之前摸一下金属物体释放手上静电，配件都放在主板盒子上操作（别直接放桌面）。</div>
+
+    <div class="steps">
+      <div class="step">
+        <h3>安装 CPU 到主板</h3>
+        <p>打开主板 CPU 插槽的压杆，拿出 CPU，对准<b>角落的三角形标记</b>轻轻放下（不用用力压），
+        合上压杆锁紧。Intel 和 AMD 的卡扣方式略有不同，但都是"对准标记→放下→锁住"。</p>
+      </div>
+      <div class="step">
+        <h3>安装内存</h3>
+        <p>掰开内存插槽两边的卡扣，内存条<b>对准中间的缺口</b>，垂直插入，听到"咔哒"一声、卡扣自动扣上即可。
+        两根内存装 <b>第 2、4 根槽</b>（从 CPU 方向数），组成双通道。</p>
+      </div>
+      <div class="step">
+        <h3>安装 M.2 固态硬盘</h3>
+        <p>拧下主板上 M.2 散热片的螺丝，把固态斜着插入插槽，压平后拧回螺丝和散热片即可。
+        如果是 SATA 硬盘，就固定在机箱硬盘位，用 SATA 数据线 + 电源线连接。</p>
+      </div>
+      <div class="step">
+        <h3>安装 CPU 散热器</h3>
+        <p>在 CPU 顶盖中央<b>挤一粒黄豆大小的硅脂</b>，撕掉散热器底部的<b>保护膜</b>，
+        对准扣具或螺丝位装好。风冷注意风扇方向（朝机箱后方吹）；水冷把冷排装在机箱顶部或前面。</p>
+        <p class="warn">⚠️ <b>重点：</b>很多人会忘记撕散热器底部的塑料保护膜，导致温度爆高，务必检查！</p>
+      </div>
+      <div class="step">
+        <h3>把主板装进机箱</h3>
+        <p>先装好机箱附带的<b>铜柱</b>（注意和主板螺丝孔位置对应，别多装以免顶到主板短路），
+        再把主板放进去，用螺丝固定。</p>
+      </div>
+      <div class="step">
+        <h3>安装电源</h3>
+        <p>电源装在机箱底部或顶部（看机箱设计），风扇朝下（朝有进风口的一侧），用四颗螺丝固定。
+        先不急着插线，等装完显卡再理线。</p>
+      </div>
+      <div class="step">
+        <h3>安装显卡</h3>
+        <p>找到主板最靠 CPU 的 PCIe 插槽，掰开尾部的卡扣，拆掉机箱对应位置的挡板，
+        把显卡<b>垂直插入到底</b>，听到卡扣扣上的声音，再用螺丝固定在机箱上。</p>
+      </div>
+      <div class="step">
+        <h3>接线（最关键的一步）</h3>
+        <p>按顺序接：① 主板 24pin 供电 → ② CPU 8pin 供电（主板左上角）→ ③ 显卡 PCIe 供电 →
+        ④ 机箱风扇和散热风扇线（插主板 4pin）→ ⑤ 机箱前面板的开机键/指示灯/USB 线
+        （对应主板右下角的针脚，看不懂就查主板说明书）。</p>
+        <p class="warn">⚠️ <b>重点：</b>前面板的开机键线接错只是按不亮，别怕；但<b>供电线务必插到底、插对位</b>，插错或没插紧可能点不亮甚至烧硬件。</p>
+      </div>
+      <div class="step">
+        <h3>理线</h3>
+        <p>把多余的线从机箱背面的走线孔整理好，用扎带捆起来，别挡住风扇和散热风道。
+        理线不影响性能，但能让机箱更整洁、散热更好。</p>
+      </div>
+      <div class="step">
+        <h3>第一次开机测试</h3>
+        <p>接上显示器（插在<b>显卡</b>接口）、键鼠和电源线，按开机键。
+        如果屏幕能显示主板 Logo 并进入 BIOS 界面，恭喜你，硬件安装成功！</p>
+        <p class="warn">⚠️ 点不亮怎么办：先检查电源开关、24pin 和 CPU 供电是否插紧、
+        显示器是否插在显卡上、内存是否插到位。这几项解决了 90% 的问题。</p>
+      </div>
+      <div class="step">
+        <h3>安装操作系统</h3>
+        <p>用另一台电脑把 Windows 安装程序写进 U 盘（官方"媒体创建工具"），插到新电脑上，
+        开机时按 <b>Del/F2</b> 进入 BIOS 设置从 U 盘启动，按提示安装即可。
+        装完后去官网装显卡驱动，就大功告成了。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" style="color:var(--accent);text-decoration:none;">← 返回首页</a><br><br>
+  小白装机指南 · 内容仅供学习参考 · 无任何购买链接
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>电脑各种接口介绍 · 小白装机指南</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <span class="brand"><a href="index.html">🖥 装机指南</a></span>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="parts.html">配件推荐</a>
+      <a href="ports.html" class="active">接口介绍</a>
+      <a href="steps.html">装机步骤</a>
+    </nav>
+  </div>
+</header>
+
+<div class="subnav">
+  <span style="font-size:13px;color:var(--muted);line-height:28px;">快速跳转：</span>
+  <a href="#back">主板背面接口</a>
+  <a href="#gpu-port">显卡接口</a>
+  <a href="#front">机箱前面板</a>
+  <a href="#inside">机箱内部接口</a>
+</div>
+
+<section id="ports" class="anchor">
+  <div class="container">
+    <h2>🔌 电脑各种接口介绍</h2>
+    <p class="sub">看懂这些接口，接显示器、键鼠、网线、硬盘都不会抓瞎。</p>
+
+    <div id="back" class="anchor group-label">主板背面接口（机箱后面）</div>
+    <div class="port-grid">
+      <div class="port">
+        <div class="name">USB-A（2.0 / 3.0）</div>
+        <div class="where">长方形接口，最常见</div>
+        <div class="use">接鼠标、键盘、U 盘、移动硬盘、打印机等。3.0（蓝色）比 2.0 传输快很多。</div>
+      </div>
+      <div class="port">
+        <div class="name">USB-C</div>
+        <div class="where">椭圆形、不分正反</div>
+        <div class="use">新设备的通用接口，传数据快、还能给手机/平板充电和接显示器。</div>
+      </div>
+      <div class="port">
+        <div class="name">HDMI</div>
+        <div class="where">梯形口，显示器视频线</div>
+        <div class="use">最通用的接显示器/电视接口，插在<b>显卡</b>上（有独显千万别插主板）。</div>
+      </div>
+      <div class="port">
+        <div class="name">DisplayPort（DP）</div>
+        <div class="where">有点像 HDMI 但缺一角</div>
+        <div class="use">也是接显示器，带宽更高，打游戏高刷新率（144Hz+）优先用 DP。</div>
+      </div>
+      <div class="port">
+        <div class="name">网线接口（RJ45）</div>
+        <div class="where">像电话线接口，有卡扣</div>
+        <div class="use">插网线连宽带，比 WiFi 更稳定、延迟更低，游戏党推荐。</div>
+      </div>
+      <div class="port">
+        <div class="name">3.5mm 音频接口</div>
+        <div class="where">小圆孔，通常有绿/粉/蓝</div>
+        <div class="use">绿色接耳机/音箱，粉色接麦克风，蓝色接音频输入。</div>
+      </div>
+      <div class="port">
+        <div class="name">WiFi 天线接口</div>
+        <div class="where">两个金色小圆钮</div>
+        <div class="use">主板带无线网卡的才有，拧上天线就能连 WiFi 和蓝牙。</div>
+      </div>
+    </div>
+
+    <div id="gpu-port" class="anchor group-label">显卡接口（机箱后面偏下的位置）</div>
+    <div class="port-grid">
+      <div class="port">
+        <div class="name">HDMI / DP</div>
+        <div class="where">显卡的挡板位置</div>
+        <div class="use">装了独立显卡后，显示器必须接<b>这里</b>，接主板接口会没画面。</div>
+      </div>
+    </div>
+
+    <div id="front" class="anchor group-label">机箱前面板接口</div>
+    <div class="port-grid">
+      <div class="port">
+        <div class="name">USB 口</div>
+        <div class="where">机箱正面/顶部</div>
+        <div class="use">临时插 U 盘、手机充电等，使用方便。</div>
+      </div>
+      <div class="port">
+        <div class="name">耳机/麦克风口</div>
+        <div class="where">机箱正面小圆孔</div>
+        <div class="use">插耳机和麦克风，和主板后面的音频口功能一样。</div>
+      </div>
+      <div class="port">
+        <div class="name">开机键 / 重启键</div>
+        <div class="where">机箱正面</div>
+        <div class="use">开机和强制重启。电源灯和硬盘灯会亮起表示通电/读写。</div>
+      </div>
+    </div>
+
+    <div id="inside" class="anchor group-label">机箱内部接口（装机时会用到）</div>
+    <div class="port-grid">
+      <div class="port">
+        <div class="name">24pin 主板供电</div>
+        <div class="where">主板右侧长插槽</div>
+        <div class="use">电源最大的那根线插这里，给整块主板供电。</div>
+      </div>
+      <div class="port">
+        <div class="name">8pin CPU 供电</div>
+        <div class="where">主板左上角</div>
+        <div class="use">专门给 CPU 供电，别和显卡供电线搞混。</div>
+      </div>
+      <div class="port">
+        <div class="name">PCIe 显卡供电</div>
+        <div class="where">显卡顶端</div>
+        <div class="use">电源的 8pin/16pin 线插这里，给独立显卡供电。</div>
+      </div>
+      <div class="port">
+        <div class="name">PCIe 插槽</div>
+        <div class="where">主板中下方长槽</div>
+        <div class="use">插显卡的位置，通常用最靠近 CPU 的那条（速度最快）。</div>
+      </div>
+      <div class="port">
+        <div class="name">内存插槽（DIMM）</div>
+        <div class="where">CPU 旁边的长槽</div>
+        <div class="use">插内存条。两根内存要插在 2、4 槽（隔开）组双通道。</div>
+      </div>
+      <div class="port">
+        <div class="name">M.2 插槽</div>
+        <div class="where">主板上的小长槽</div>
+        <div class="use">插 M.2 固态硬盘，通常带散热片盖着。</div>
+      </div>
+      <div class="port">
+        <div class="name">SATA 接口</div>
+        <div class="where">主板侧边小口</div>
+        <div class="use">接机械硬盘或 2.5 寸固态，需要电源供电和数据线。</div>
+      </div>
+      <div class="port">
+        <div class="name">风扇接口（4pin）</div>
+        <div class="where">主板各处小针脚</div>
+        <div class="use">插机箱风扇和散热器风扇的线，控制转速。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="steps.html" style="color:var(--accent);text-decoration:none;">下一步：查看简单装机步骤 →</a><br><br>
+  小白装机指南 · 内容仅供学习参考 · 无任何购买链接
+</footer>
+
+</body>
+</html>
